@@ -5,12 +5,17 @@ import App from "./App.jsx";
 import SignUpPage from "./auth/sign-up";
 import SignInPage from "./auth/sign-in";
 import { BrowserRouter, Routes, Route } from "react-router";
+import Home from "./home";
+import Dashboard from "./dashboard";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="dashboard" element={<Dashboard />} />
+        </Route>
         <Route path="/auth/sign-in" element={<SignInPage />} />
         <Route path="/auth/sign-up" element={<SignUpPage />} />
       </Routes>
