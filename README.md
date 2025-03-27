@@ -1,4 +1,11 @@
-# React + Vite
+# AI Resume Builder
+
+## 🛠️ Tech Stack :
+- **React**
+- **Vite**
+- **Clerk**
+- **Shadcn UI**
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
