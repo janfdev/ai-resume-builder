@@ -1,6 +1,7 @@
 import { Navigate, Outlet } from "react-router";
 import { Button } from "./components/ui/button";
 import { useUser } from "@clerk/clerk-react";
+import Header from "./components/ui/custom/Header";
 
 function App() {
   const { user, isLoaded, isSignedIn } = useUser();
@@ -10,6 +11,7 @@ function App() {
   }
   return (
     <>
+      <Header />
       <Outlet />
     </>
   );
