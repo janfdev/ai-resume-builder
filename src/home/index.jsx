@@ -6,7 +6,6 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <h1>Landing Screen</h1>
     </div>
   );
 };
